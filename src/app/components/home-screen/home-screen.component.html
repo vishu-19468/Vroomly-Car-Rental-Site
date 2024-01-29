@@ -1,0 +1,90 @@
+<div>
+  <app-navbar></app-navbar>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Full Page Intro -->
+  <div class="view"
+  style="background-image: url('../../../assets/imgs/background-img.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-black-light align-items-center">
+    <!-- Content -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="homeInfo col-md-12 mb-6 white-text text-center">
+          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 my-3 pt-md-5 pt-5 wow fadeInDown"
+            data-wow-delay="0.3s"><strong>Welcome to Torque.</strong></h1>
+          <h6 class="text-uppercase mb-2 white-text wow fadeInDown" data-wow-delay="0.4s">Looking to rent a car for an upcoming vacation or business trip? In TORQUE, we make renting a car seamless so you can get right on your way.</h6>
+          <a href="#" class="btn mx-2 fadeInDown">Rent Now</a>
+          <a routerLink="/cars" class="btn mx-2 fadeInDown">Cars</a>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+  <header>
+
+  </header>
+</body>
+<app-rental-panel></app-rental-panel>
+
+<!--How it works section-->
+<section class="howit my-6" id="ride">
+  <div class="heading my-2">
+    <span>How It Works.</span>
+    <h1>Rent with three easy steps</h1>
+  </div>
+  <div class="howit-container">
+    <div class="box">
+      <i class="bx bxs-map"></i>
+      <h2>Choose a Location</h2>
+      <p>Choose a location that fits your needs and ease of access, so you can have an enjoyable and memorable trip using our rides.</p>
+    </div>
+    <div class="box">
+      <i class="bx bxs-calendar-star"></i>
+      <h2>Pick a Date</h2>
+      <p>Pick a date that works best for you and fits within your budget, while also allowing you to experience the your destination in the best way possible.</p>
+    </div>
+    <div class="box">
+      <i class="bx bx-car"></i>
+      <h2>Choose a Ride</h2>
+      <p>Choose a ride from our wide range of vehicle with many categories that fits your needs and preferences, and allows you to get to your destination comfortably and efficiently.</p>
+    </div>
+  </div>
+</section>
+
+<!--Most demanded vehicles-->
+
+<section class="demandedRides my-6" id="dmd">
+  <div class="heading my-2">
+    <span>Most Demanded Rides.</span>
+    <h1>Explore our most popular vehicles</h1>
+  </div>
+  <div class="demandedRides-container">
+    <!--carousel-->
+    <app-carousel></app-carousel>
+  </div>
+</section>
+
+<div>
+  <app-footer></app-footer>
+</div>
+
+</html>
